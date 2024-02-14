@@ -171,11 +171,11 @@
 
 1、计算总的可能性，即从27根棍子中抽取9根的组合数：
 
-![equation](https://latex.codecogs.com/svg.latex?\Large&space;{total_combinations}=C(27, 9))
+![equation](https://latex.codecogs.com/svg.latex?{total\_combinations}=C(27,9))
 
 2、对于每个奖励金额，计算对应的颜色组合的组合数。例如，对于1000元奖励，需要抽出9根黄色棍子，组合数为：
 
-![equation](https://latex.codecogs.com/svg.latex?\Large&space;{combinations}_{1000}=C(9, 9) \times C(9, 0) \times C(9, 0))
+![equation](https://latex.codecogs.com/svg.latex?{combinations}_{1000}=C(9,%209)\times%20C(9,%200)%20\times%20C(9,%200))
 
 3、计算每个奖励金额的概率，即对应颜色组合的组合数除以总的可能性：
 
