@@ -151,9 +151,8 @@
 
 ​		组合数表示的是在没有考虑顺序的情况下，从n个不同元素中取出k个元素的不同组合方式的数量。组合数的计算公式为：
 
-$$
-C(n, k) = \frac{n!}{k!(n - k)!}
-$$
+![equation](https://latex.codecogs.com/svg.latex?\Large&space;C(n,k)=\frac{n!}{k!(n-k)!})
+
 ​		其中 `n!` 表示n的阶乘，即 `n * (n-1) * (n-2) * ... * 1`。
 
 ## 多项式分布 (Multinomial Distribution)
