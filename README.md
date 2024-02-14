@@ -161,9 +161,8 @@
 
 ​		多项式分布的概率质量函数（PMF）为：
 
-$$
-P(X_1 = x_1, X_2 = x_2, \ldots, X_k = x_k) = \frac{n!}{x_1! \times x_2! \times \ldots \times x_k!} \times p_1^{x_1} \times p_2^{x_2} \times \ldots \times p_k^{x_k}
-$$
+![equation](https://latex.codecogs.com/svg.latex?\Large&space;P(X_1=x_1,X_2=x_2,\ldots,X_k=x_k)=\frac{n!}{x_1!\times%20x_2!\times%20\ldots%20\times%20x_k!}\times%20p_1^{x_1}\times%20p_2^{x_2}\times%20\ldots%20\times%20p_k^{x_k})
+
 ​		其中，`X1, X2, ..., Xk` 是每种结果发生的次数，`p1, p2, ..., pk` 是每种结果的概率，且 `x1 + x2 + ... + xk = n`。
 
 ​		在我们的问题中，由于每种颜色的棍子数量相同，因此每种颜色被抽到的概率是相等的，即 `p1 = p2 = p3 = 1/3`。但是，由于我们只关心颜色的组合，而不关心顺序，所以我们可以忽略概率的乘积部分，只计算组合数。
@@ -171,18 +170,17 @@ $$
 ## 计算步骤
 
 1、计算总的可能性，即从27根棍子中抽取9根的组合数：
-$$
-{total_combinations} = C(27, 9)
-$$
+
+![equation](https://latex.codecogs.com/svg.latex?\Large&space;{total_combinations} = C(27, 9))
+
 2、对于每个奖励金额，计算对应的颜色组合的组合数。例如，对于1000元奖励，需要抽出9根黄色棍子，组合数为：
 
-$$
-{combinations}_{1000} = C(9, 9) \times C(9, 0) \times C(9, 0)
-$$
+![equation](https://latex.codecogs.com/svg.latex?\Large&space;{combinations}_{1000} = C(9, 9) \times C(9, 0) \times C(9, 0))
+
 3、计算每个奖励金额的概率，即对应颜色组合的组合数除以总的可能性：
-$$
-{probability}_{1000} = \frac{{combinations}_{1000}}{{total_combinations}}
-$$
+
+![equation](https://latex.codecogs.com/svg.latex?\Large&space;\{probability\}_{1000}=\frac{\{combinations\}_{1000}}{\{total\_combinations\}})
+
 4、重复步骤2和3，计算每个奖励金额的概率。
 
 5、输出每个奖励金额的概率。
